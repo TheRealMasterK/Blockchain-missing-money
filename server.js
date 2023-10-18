@@ -2,8 +2,8 @@ const express = require('express');
 const multer = require('multer');
 const fs = require('fs');
 const path = require('path');
-const Blockchain = require('./blockchain-node/blockchain');
-const Block = require('./blockchain-node/block');
+const Blockchain = require('./blockchain');
+const Block = require('./block');
 
 const app = express();
 const upload = multer({ dest: 'blockchain-node/uploads/' });
