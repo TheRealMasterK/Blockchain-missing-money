@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blockchain Node</title>
+</head>
+<body>
+    <pre><%= JSON.stringify(blockchain, null, 2) %></pre>
+    <form action="/addBlock" method="post">
+        <label for="text">Text:</label><br>
+        <input type="text" id="text" name="text" required><br>
+        <label for="image">Image Base64:</label><br>
+        <textarea id="image" name="image" rows="4" cols="50" required></textarea><br>
+        <input type="submit" value="Submit">
+    </form>
+    
+    
+</body>
+</html>
+
